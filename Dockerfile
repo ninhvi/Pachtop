@@ -3,6 +3,8 @@ FROM node:20.18.0 AS development
 
 WORKDIR /app
 
+# Copy package.json và yarn.lock trước
+COPY package*.json ./
 # Cài đặt dependencies
 RUN yarn install 
 # Copy toàn bộ mã nguồn vào container
