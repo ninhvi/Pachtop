@@ -1,5 +1,5 @@
 # Stage 1: Development (Node.js Environment)
-FROM node:20.18.0 AS development
+FROM node:16.20.2 AS development
 
 WORKDIR /app
 
